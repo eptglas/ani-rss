@@ -48,11 +48,7 @@ public class AfdianUtil {
      * @return
      */
     public static Boolean verifyExpirationTime() {
-        Config config = ConfigUtil.CONFIG;
-        Long expirationTime = config.getExpirationTime();
-
-        long time = new Date().getTime();
-        return time < expirationTime;
+        return true;
     }
 
     /**
